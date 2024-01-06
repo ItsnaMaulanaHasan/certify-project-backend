@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiSGFzYW4iLCJlbWFpbCI6Imhhc2FuQGdtYWlsLmNvbSIsImlhdCI6MTcwNDUyMzEyNiwiZXhwIjoxNzA0NTIzMTQ2fQ.zS9HZn-8k51oRus-U30K81M0xWUnbh5kT8WkoyoHFZ0
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "username": "Hasan2",
+    "email": "hasan2@gmail.com",
+    "password": "12345678",
+    "confPassword": "12345678"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "hasan@gmail.com",
+    "password" : "12345678"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
